@@ -217,3 +217,11 @@ Developed as the final handover project for the EZITECH Front-End Development In
 ## Final Status
 
 The WanderLite Travel mini-site combines the landing page, interactive destination gallery, and accessible booking inquiry form into one deployable static project.
+
+## Handover Notes
+
+The project is organized as a production ready static website for GitHub Pages deployment. All destination images are stored locally in the `images` directory, while destination information is maintained in `destinations.json`.
+
+The website can be run locally using Live Server or a local HTTP server. GitHub Pages is used for deployment because the project is a static HTML, CSS, and JavaScript application and does not require a server side backend.
+
+Before final submission, the deployed GitHub Pages URL should be verified at desktop and mobile viewport sizes to confirm that all images, styles, scripts, filters, form validation, and navigation work correctly.
