@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Maldives Escape",
+    "region": "Beach",
+    "description": "Relax on white sandy beaches and enjoy crystal-clear tropical waters.",
+    "image": "images/maldives.jpg",
+    "alt": "Tropical beach with clear blue water and palm trees"
+  },
+  {
+    "id": 2,
+    "title": "Amalfi Coast",
+    "region": "Beach",
+    "description": "Discover colorful coastal villages, dramatic cliffs, and Mediterranean views.",
+    "image": "images/amalfi-coast.jpg",
+    "alt": "Colorful coastal buildings overlooking the Mediterranean Sea"
+  },
+  {
+    "id": 3,
+    "title": "Bali Retreat",
+    "region": "Beach",
+    "description": "Experience peaceful beaches, tropical landscapes, and island culture.",
+    "image": "images/bali.jpg",
+    "alt": "Tropical Bali landscape with lush greenery"
+  },
+  {
+    "id": 4,
+    "title": "Swiss Alps",
+    "region": "Mountain",
+    "description": "Explore breathtaking alpine scenery, peaceful valleys, and mountain trails.",
+    "image": "images/swiss-alps.jpg",
+    "alt": "Snow-covered mountain peaks in the Swiss Alps"
+  },
+  {
+    "id": 5,
+    "title": "Banff Adventure",
+    "region": "Mountain",
+    "description": "Enjoy spectacular lakes, forests, and unforgettable mountain adventures.",
+    "image": "images/banff.jpg",
+    "alt": "Mountain landscape surrounded by a peaceful natural environment"
+  },
+  {
+    "id": 6,
+    "title": "Himalayan Escape",
+    "region": "Mountain",
+    "description": "Experience dramatic peaks, peaceful valleys, and inspiring mountain scenery.",
+    "image": "images/himalayan.jpg",
+    "alt": "Large mountain range under a clear sky"
+  },
+  {
+    "id": 7,
+    "title": "Paris Discovery",
+    "region": "City",
+    "description": "Explore iconic landmarks, charming streets, art, culture, and cuisine.",
+    "image": "images/paris.jpg",
+    "alt": "Eiffel Tower in Paris viewed from a city street"
+  },
+  {
+    "id": 8,
+    "title": "New York Adventure",
+    "region": "City",
+    "description": "Experience vibrant neighborhoods, famous landmarks, and endless city energy.",
+    "image": "images/new-york.jpg",
+    "alt": "New York City skyline and buildings"
+  },
+  {
+    "id": 9,
+    "title": "Tokyo Experience",
+    "region": "City",
+    "description": "Discover modern streets, traditional culture, technology, and incredible food.",
+    "image": "images/tokyo.jpg",
+    "alt": "Tokyo city street illuminated by colorful signs"
+  }
+]

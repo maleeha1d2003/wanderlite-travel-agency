@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="WanderLite Travel is a responsive travel agency mini-site with destination filters and an accessible booking inquiry form."
+  >
+
+  <title>WanderLite Travel | Explore Beyond</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <a class="logo" href="#home" aria-label="WanderLite Travel home">
+        WanderLite
+      </a>
+
+      <!-- Mobile navigation -->
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#features">Why WanderLite</a></li>
+          <li><a href="#inquiry">Booking Inquiry</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </details>
+
+      <!-- Desktop navigation -->
+      <ul class="desktop-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#features">Why WanderLite</a></li>
+        <li><a href="#inquiry">Booking Inquiry</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <!-- Meaningful alt text satisfies the image requirement -->
+      <img
+        class="hero-image"
+        src="images/hero.svg"
+        alt="Scenic mountain landscape representing travel and exploration"
+      >
+
+      <div class="hero-content container">
+
+        <p class="eyebrow">WanderLite Travel Agency</p>
+
+        <h1>Explore beyond the ordinary.</h1>
+
+        <p class="hero-text">
+          Discover memorable destinations, curated stays, and flexible
+          travel experiences designed around you.
+        </p>
+
+        <a class="button" href="#destinations">
+          Explore destinations
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="section destinations-section" id="destinations">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">Explore</p>
+
+      <h2>Find your next destination</h2>
+
+      <p>
+        Browse our sample destinations and filter your choices
+        by the type of experience you are looking for.
+      </p>
+
+    </div>
+
+
+    <div class="filter-controls" role="group" aria-label="Filter destinations by region">
+
+      <button
+        class="filter-button active"
+        type="button"
+        data-region="All"
+        aria-pressed="true"
+      >
+        All
+      </button>
+
+      <button
+        class="filter-button"
+        type="button"
+        data-region="Beach"
+        aria-pressed="false"
+      >
+        Beach
+      </button>
+
+      <button
+        class="filter-button"
+        type="button"
+        data-region="Mountain"
+        aria-pressed="false"
+      >
+        Mountain
+      </button>
+
+      <button
+        class="filter-button"
+        type="button"
+        data-region="City"
+        aria-pressed="false"
+      >
+        City
+      </button>
+
+    </div>
+
+
+    <div
+      class="destination-gallery"
+      id="destination-gallery"
+      aria-live="polite"
+    >
+      <p class="gallery-message">
+        Loading destinations...
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- Features Section -->
+    <section class="feature-section" id="features">
+
+      <div class="container feature-layout">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">Why WanderLite</p>
+
+          <h2>Less planning. More living.</h2>
+
+          <p class="feature-intro">
+            We make travel simpler so you can spend more time enjoying
+            the journey and less time worrying about the details.
+          </p>
+
+        </div>
+
+
+        <div class="feature-list">
+
+          <article class="feature">
+
+            <span class="feature-number">01</span>
+
+            <div>
+              <h3>Curated experiences</h3>
+
+              <p>
+                Carefully selected destinations and experiences to help
+                you make the most of your trip.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="feature">
+
+            <span class="feature-number">02</span>
+
+            <div>
+              <h3>Flexible planning</h3>
+
+              <p>
+                Travel options designed around your schedule, preferences,
+                and personal travel style.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="feature">
+
+            <span class="feature-number">03</span>
+
+            <div>
+              <h3>Travel with confidence</h3>
+
+              <p>
+                Get helpful guidance throughout your planning process
+                so your journey feels simple and stress-free.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Booking Inquiry -->
+    <section
+      class="inquiry-section"
+      id="inquiry"
+    >
+
+      <div class="container inquiry-layout">
+
+        <div class="inquiry-intro">
+
+          <p class="eyebrow">Booking Inquiry</p>
+
+          <h2>
+            Plan your next adventure.
+          </h2>
+
+          <p>
+            Tell us a little about your trip. Complete the
+            form and we'll have your travel preferences ready
+            for the next step.
+          </p>
+
+          <div class="form-note">
+            <strong>Before you submit</strong>
+
+            <p>
+              All required fields are checked as you type.
+              You can also complete and submit the form
+              entirely using your keyboard.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="form-card">
+
+          <form
+            id="booking-form"
+            novalidate
+            aria-labelledby="form-title"
+          >
+
+            <h2 id="form-title">
+              Request a quote
+            </h2>
+
+
+            <!-- Full Name -->
+            <div class="form-group">
+
+              <label for="full-name">
+                Full Name
+              </label>
+
+              <input
+                id="full-name"
+                name="fullName"
+                type="text"
+                autocomplete="name"
+                required
+                aria-describedby="full-name-error"
+              >
+
+              <p
+                id="full-name-error"
+                class="error-message"
+                role="alert"
+                aria-live="polite"
+              ></p>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="form-group">
+
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                aria-describedby="email-error"
+              >
+
+              <p
+                id="email-error"
+                class="error-message"
+                role="alert"
+                aria-live="polite"
+              ></p>
+
+            </div>
+
+
+            <!-- Dates -->
+            <div class="date-grid">
+
+              <div class="form-group">
+
+                <label for="start-date">
+                  Start Date
+                </label>
+
+                <input
+                  id="start-date"
+                  name="startDate"
+                  type="date"
+                  required
+                  aria-describedby="start-date-error"
+                >
+
+                <p
+                  id="start-date-error"
+                  class="error-message"
+                  role="alert"
+                  aria-live="polite"
+                ></p>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="end-date">
+                  End Date
+                </label>
+
+                <input
+                  id="end-date"
+                  name="endDate"
+                  type="date"
+                  required
+                  aria-describedby="end-date-error"
+                >
+
+                <p
+                  id="end-date-error"
+                  class="error-message"
+                  role="alert"
+                  aria-live="polite"
+                ></p>
+
+              </div>
+
+            </div>
+
+
+            <!-- Destination -->
+            <div class="form-group">
+
+              <label for="destination">
+                Destination
+              </label>
+
+              <select
+                id="destination"
+                name="destination"
+                required
+                aria-describedby="destination-error"
+              >
+
+                <option value="">
+                  Select a destination
+                </option>
+
+                <option value="Maldives">
+                  Maldives
+                </option>
+
+                <option value="Amalfi Coast">
+                  Amalfi Coast
+                </option>
+
+                <option value="Bali">
+                  Bali
+                </option>
+
+                <option value="Swiss Alps">
+                  Swiss Alps
+                </option>
+
+                <option value="Banff">
+                  Banff
+                </option>
+
+                <option value="Himalayan Region">
+                  Himalayan Region
+                </option>
+
+                <option value="Paris">
+                  Paris
+                </option>
+
+                <option value="New York">
+                  New York
+                </option>
+
+                <option value="Tokyo">
+                  Tokyo
+                </option>
+
+              </select>
+
+              <p
+                id="destination-error"
+                class="error-message"
+                role="alert"
+                aria-live="polite"
+              ></p>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button
+              class="button submit-button"
+              type="submit"
+            >
+              Request a Quote
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+
+      <div class="container cta">
+
+        <div>
+
+          <p class="eyebrow">Start exploring</p>
+
+          <h2>Ready to go?</h2>
+
+          <p>
+            Your next memorable journey is waiting.
+          </p>
+
+        </div>
+
+        <a class="button button-light" href="mailto:hello@wanderlite.example">
+          Contact us
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="container footer-content">
+
+      <p class="footer-logo">
+        <strong>WanderLite Travel</strong>
+      </p>
+
+      <p>
+        © 2026 WanderLite Travel. Explore beyond the ordinary.
+      </p>
+
+    </div>
+
+  </footer>
+  <!-- Thank-you Modal -->
+  <div
+    class="modal"
+    id="thank-you-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+    aria-describedby="modal-message"
+    hidden
+  >
+
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content">
+
+      <button
+        class="modal-close"
+        id="modal-close"
+        type="button"
+        aria-label="Close thank-you message"
+      >
+        &times;
+      </button>
+
+      <p class="modal-icon" aria-hidden="true">
+        ✓
+      </p>
+
+      <h2 id="modal-title">
+        Thank you!
+      </h2>
+
+      <p id="modal-message">
+        Your travel inquiry has been received.
+        We'll be in touch soon.
+      </p>
+
+      <button
+        class="button"
+        id="modal-done"
+        type="button"
+      >
+        Close
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
